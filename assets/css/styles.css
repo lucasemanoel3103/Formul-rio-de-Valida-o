@@ -4,40 +4,98 @@
 }
 
 body {
-    padding: 1rem;
+    background-color: #f4f4f9;
+    padding: 2rem;
+    color: #333;
+    font-size: 16px;
 }
 
 h1 {
     text-align: center;
+    color: #4a90e2;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
     width: 500px;
+    max-width: 500px;
     margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 label {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
+    color: #333;
+
 }
 
 input, select, textarea {
    width: 100%;
-   padding: 10px;
+   padding: 12px;
    border: 1px solid #ccc;
    border-radius: 5px;
    font-size: 1.1rem;
+   transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #4a90e2;
+    outline: none;
 }
 
 button { 
-    padding: 10px;
+    padding: 12px;
     border: none;
     border-radius: 5px;
-    background-color: #333;
+    background-color: #4a90e2;
     color: #fff;
     font-size: 1.1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+bu
+button:hover {
+    background-color: #357ABD;
+}
+
+button:focus {
+    outline: none;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: cal(50% - 7px);
+    cursor: pointer;
+    color: #333;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#togglePassword:hover {
+    color: #357ABD;
 }

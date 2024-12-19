@@ -13,11 +13,15 @@
         <label for="name">Nome:</label>
         <input type="text" id="name">
 
-        <label for="email">E-mail</label>
+        <label for="email">E-mail:</label>
         <input type="email" id="email">
 
         <label for="password">Senha:</label>
-        <input type="password" id="password"> 
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Digite sua senha" required>
+            <button type="button" id="togglePassword">Mostrar</button>
+        </div>
+        
 
         <label for="job">Situação de trabalho:</label>
         <select name="job" id="job">
